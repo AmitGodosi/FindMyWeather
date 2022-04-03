@@ -6,7 +6,6 @@
     @include height-width(40px, 100vw);
     background-color: $default-background;
     padding: $padding-s;
-    border: $border-s solid $on-focus;
     & h4 {
         @include linear-gradient(rgb(223, 193, 155), rgb(92, 69, 39));
         padding: $padding-s;

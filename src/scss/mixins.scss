@@ -37,12 +37,3 @@
     margin: $margin;
     padding: $padding;
 }
-
-@mixin favorite-icon-position {
-    border-radius: 50%;
-    position: absolute;
-    top: -12px;
-    left: -25px;
-    width: 30px;
-    height: 30px;
-}

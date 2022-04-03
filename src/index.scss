@@ -30,8 +30,11 @@ body {
 
 .theme-button {
     position: absolute;
-    left: 10px;
-    top: 10px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 70px;
+    width: 100px;
     background: none;
     border: none;
     padding: $padding-m;

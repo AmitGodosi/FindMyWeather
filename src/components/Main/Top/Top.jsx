@@ -1,8 +1,8 @@
 import classes from "./Top.module.scss";
-import { GrFavorite } from "react-icons/gr";
 import { useSelector } from "react-redux";
 import React, { useEffect, useState } from "react";
 import DayTime from "../../../assets/day.svg";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 import NightTime from "../../../assets/night.svg";
 
 const Top = () => {
@@ -72,9 +72,13 @@ const Top = () => {
             </div>
           </div>
           <div className={classes.links}>
-            <p className={isFavorite ? classes.favorite : classes.notFavorite}>
-              <GrFavorite onClick={handelFavorite} className={classes.icon} />
-            </p>
+            <FavoriteIcon
+              style={
+                isFavorite ? { fill: "rgb(150, 29, 29)" } : { fill: "grey" }
+              }
+              onClick={handelFavorite}
+              className={classes.icon}
+            />
             <button onClick={handelFavorite}>Add / Remove</button>
           </div>
         </div>

@@ -20,7 +20,9 @@
 }
 
 .links {
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     & button {
         background-color: rgb(219, 196, 166);
         border: none;
@@ -32,22 +34,7 @@
             background-color: $on-focus;
         }
     }
-}
-
-.favorite {
-    @include favorite-icon-position;
-    background-color: rgb(167, 64, 64);
-}
-
-.notFavorite {
-    @include favorite-icon-position;
-}
-
-.icon {
-    position: absolute;
-    top: 5px;
-    left: 4.5px;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
+    .icon {
+        cursor: pointer;
+    }
 }
