@@ -1,0 +1,48 @@
+@mixin absolute-center($top) {
+    position: absolute;
+    left: 50%;
+    top: $top;
+    transform: translate(-50%, -50%);
+}
+
+@mixin search-position($top) {
+    position: absolute;
+    top: $top;
+}
+
+@mixin flexbox($justify-content) {
+    display: flex;
+    align-items: center;
+    justify-content: $justify-content;
+}
+
+@mixin linear-gradient($color1, $color2) {
+    background: linear-gradient(to right, $color1, $color2);
+    background-clip: text;
+    color: transparent;
+}
+
+@mixin nav-links {
+    border-radius: $border-radius-s;
+    padding: $padding-s;
+    cursor: pointer;
+}
+
+@mixin height-width($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+@mixin margin-padding($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin favorite-icon-position {
+    border-radius: 50%;
+    position: absolute;
+    top: -12px;
+    left: -25px;
+    width: 30px;
+    height: 30px;
+}

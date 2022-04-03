@@ -1,0 +1,53 @@
+@import "../../../scss/colors.scss";
+@import "../../../scss/mixins.scss";
+@import "../../../scss/variables.scss";
+.container {
+    @include height-width(20%, 100%);
+    @include flexbox(space-between);
+    background-color: $default-background;
+}
+
+.details {
+    @include flexbox(center);
+}
+
+.img {
+    & img {
+        @include height-width(75px, 75px);
+        margin: 0 10px;
+        border-radius: $border-radius-m;
+    }
+}
+
+.links {
+    position: relative;
+    & button {
+        background-color: rgb(219, 196, 166);
+        border: none;
+        margin: 0 $margin-m;
+        padding: $padding-m;
+        border-radius: $border-radius-m;
+        cursor: pointer;
+        &:hover {
+            background-color: $on-focus;
+        }
+    }
+}
+
+.favorite {
+    @include favorite-icon-position;
+    background-color: rgb(167, 64, 64);
+}
+
+.notFavorite {
+    @include favorite-icon-position;
+}
+
+.icon {
+    position: absolute;
+    top: 5px;
+    left: 4.5px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}

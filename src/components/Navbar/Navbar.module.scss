@@ -1,0 +1,32 @@
+@import "../../scss/colors.scss";
+@import "../../scss/mixins.scss";
+@import "../../scss/variables.scss";
+.container {
+    @include flexbox(space-between);
+    @include height-width(40px, 100vw);
+    background-color: $default-background;
+    padding: $padding-s;
+    border: $border-s solid $on-focus;
+    & h4 {
+        @include linear-gradient(rgb(223, 193, 155), rgb(92, 69, 39));
+        padding: $padding-s;
+        letter-spacing: $letter-spacing-s;
+    }
+    & ul {
+        @include flexbox(center);
+        & li {
+            @include nav-links;
+            list-style-type: none;
+            cursor: pointer;
+            &:hover,
+            &:active {
+                background-color: $on-focus;
+            }
+        }
+    }
+}
+
+.active {
+    @include nav-links;
+    background-color: $on-focus;
+}

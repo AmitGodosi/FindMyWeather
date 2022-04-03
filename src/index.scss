@@ -1,0 +1,41 @@
+@import "./scss/variables.scss";
+@import "./scss/colors.scss";
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.alertMessage {
+    margin: $margin-m;
+    padding: $padding-m;
+    letter-spacing: $letter-spacing-s;
+}
+
+.dark {
+    background-color: $dark;
+    position: relative;
+}
+
+.bright {
+    background-color: aliceblue;
+    position: relative;
+}
+
+.theme-button {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background: none;
+    border: none;
+    padding: $padding-m;
+    background-color: rgb(215, 198, 176);
+    border-radius: $border-radius-m;
+    cursor: pointer;
+}
