@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_KEY = "BZOJaEHjRimAN6y3oShsfnZW8FSmgj1h";
+const API_KEY = "GKhRbOKVonA8oozsYdpZEGeNguyAzaZn";
 
 export const getCityInfo = async(city) => {
     const CITY_API = `http://dataservice.accuweather.com/locations/v1/cities/search?apikey=${API_KEY}&q=`;
