@@ -2,87 +2,87 @@
 @import "../../scss/mixins.scss";
 @import "../../scss/variables.scss";
 .container {
-    @include flexbox(center);
-    @include height-width(80px, 100vw);
-    flex-direction: column;
+  @include flexbox(center);
+  @include height-width(80px, 100vw);
+  flex-direction: column;
 }
 
 .search {
+  @include flexbox(center);
+  @include height-width(100%, 100%);
+  &Type {
+    margin-right: $margin-m;
+    height: 50%;
+    & select {
+      height: 100%;
+      border: $border-m solid $default-background;
+      &:focus {
+        border: $border-m solid $on-focus;
+      }
+      & option {
+        font-size: $font-size-s;
+        background-color: $search-links-background;
+        border: $border-s $search-links-border;
+        cursor: pointer;
+      }
+    }
+  }
+  &Value {
     @include flexbox(center);
-    @include height-width(100%, 100%);
-    &Type {
-        margin-right: $margin-m;
-        height: 50%;
-        & select {
-            height: 100%;
-            border: $border-m solid $default-background;
-            &:focus {
-                border: $border-m solid $on-focus;
-            }
-            & option {
-                font-size: $font-size-s;
-                background-color: $search-links-background;
-                border: $border-s $search-links-border;
-                cursor: pointer;
-            }
-        }
+    @include height-width(50%, 25%);
+    flex-direction: column;
+    position: relative;
+    &Icon {
+      position: absolute;
+      right: 5px;
+      cursor: pointer;
     }
-    &Value {
-        @include flexbox(center);
-        @include height-width(50%, 25%);
-        flex-direction: column;
-        position: relative;
-        &Icon {
-            position: absolute;
-            right: 5px;
-            cursor: pointer;
-        }
-        & input {
-            @include height-width(100%, 100%);
-            border: $border-xs solid $default-background;
-            &:focus {
-                border: $border-m solid $on-focus;
-                outline: none;
-            }
-        }
-        &List {
-            @include search-position(40px);
-            border-top: none;
-            width: 100%;
-            z-index: 999;
-            & ul {
-                @include margin-padding(0, 0);
-                list-style-type: none;
-                & li {
-                    width: 100%;
-                    padding: 5px;
-                    background-color: $search-links-background;
-                    border: $border-s solid $search-links-border;
-                    cursor: pointer;
-                    &:hover {
-                        background-color: $search-links-background-on-focus;
-                    }
-                }
-            }
-        }
+    & input {
+      @include height-width(100%, 100%);
+      border: $border-xs solid $default-background;
+      &:focus {
+        border: $border-m solid $on-focus;
+        outline: none;
+      }
     }
+    &List {
+      @include search-position(40px);
+      border-top: none;
+      width: 100%;
+      z-index: 999;
+      & ul {
+        @include margin-padding(0, 0);
+        list-style-type: none;
+        & li {
+          width: 100%;
+          padding: 5px;
+          background-color: $search-links-background;
+          border: $border-s solid $search-links-border;
+          cursor: pointer;
+          &:hover {
+            background-color: $search-links-background-on-focus;
+          }
+        }
+      }
+    }
+  }
 }
 
 .pending {
-    @include search-position(50px);
-    letter-spacing: $letter-spacing-m;
+  @include search-position(50px);
+  letter-spacing: $letter-spacing-m;
 }
 
 .error {
-    @include search-position(50px);
-    color: $error;
+  @include search-position(50px);
+  color: $error;
 }
 
 @media screen and (max-width: 426px) {
-    .searchValue {
-        @include height-width(50%, 50%);
-        &List {
-            width: 100%;
-        }
+  .searchValue {
+    @include height-width(50%, 50%);
+    &List {
+      width: 100%;
     }
+  }
 }

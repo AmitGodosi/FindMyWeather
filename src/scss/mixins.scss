@@ -1,39 +1,39 @@
 @mixin absolute-center($top) {
-    position: absolute;
-    left: 50%;
-    top: $top;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: $top;
+  transform: translate(-50%, -50%);
 }
 
 @mixin search-position($top) {
-    position: absolute;
-    top: $top;
+  position: absolute;
+  top: $top;
 }
 
 @mixin flexbox($justify-content) {
-    display: flex;
-    align-items: center;
-    justify-content: $justify-content;
+  display: flex;
+  align-items: center;
+  justify-content: $justify-content;
 }
 
 @mixin linear-gradient($color1, $color2) {
-    background: linear-gradient(to right, $color1, $color2);
-    background-clip: text;
-    color: transparent;
+  background: linear-gradient(to right, $color1, $color2);
+  background-clip: text;
+  color: transparent;
 }
 
 @mixin nav-links {
-    border-radius: $border-radius-s;
-    padding: $padding-s;
-    cursor: pointer;
+  border-radius: $border-radius-s;
+  padding: $padding-s;
+  cursor: pointer;
 }
 
 @mixin height-width($height, $width) {
-    height: $height;
-    width: $width;
+  height: $height;
+  width: $width;
 }
 
 @mixin margin-padding($margin, $padding) {
-    margin: $margin;
-    padding: $padding;
+  margin: $margin;
+  padding: $padding;
 }

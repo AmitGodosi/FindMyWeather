@@ -9,7 +9,6 @@ import "../index.scss";
 const WeatherPage = () => {
   const [isValidAPI, setIsValidAPI] = useState(null);
   const [darkTheme, setDarkTheme] = useState(false);
-
   useEffect(() => {
     const checkAPI = async () => {
       const cityRes = await getCityInfo("Tel Aviv");

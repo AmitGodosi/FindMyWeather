@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className={classes.container}>
-      <h4 className={classes.title}>Herolo Weather Task</h4>
+      <h4 className={classes.title}>Weather Task</h4>
       <ul>
         <li>
           <NavLink

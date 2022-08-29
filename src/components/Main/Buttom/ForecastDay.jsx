@@ -1,6 +1,6 @@
 import "./ForecastDay.scss";
-import DayTime from "../../../assets/day.svg";
 import NightTime from "../../../assets/night.svg";
+import DayTime from "../../../assets/day.svg";
 
 const ForecastDay = ({ epoch, min, max }) => {
   const date = new Date(epoch * 1000);

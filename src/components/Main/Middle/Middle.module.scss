@@ -2,22 +2,22 @@
 @import "../../../scss/mixins.scss";
 @import "../../../scss/variables.scss";
 .container {
-    @include height-width(30%, 100%);
-    @include flexbox(center);
-    background-color: $default-background;
-    & p {
-        letter-spacing: $letter-spacing-l;
-        font-size: $font-size-xl;
-        font-weight: bold;
-        @include linear-gradient(rgb(160, 187, 197), rgb(4, 66, 95));
-        text-align: center;
-        margin: 0;
-        padding: 0;
-    }
+  @include height-width(30%, 100%);
+  @include flexbox(center);
+  background-color: $default-background;
+  & p {
+    letter-spacing: $letter-spacing-l;
+    font-size: $font-size-xl;
+    font-weight: bold;
+    @include linear-gradient(rgb(160, 187, 197), rgb(4, 66, 95));
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .container {
-        @include height-width(20%, 100%);
-    }
+  .container {
+    @include height-width(20%, 100%);
+  }
 }

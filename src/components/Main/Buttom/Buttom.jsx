@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
-import classes from "./Buttom.module.scss";
 import ForecastDay from "./ForecastDay";
+import classes from "./Buttom.module.scss";
 
 const Buttom = () => {
   const forecast = useSelector((state) => state.forecast);

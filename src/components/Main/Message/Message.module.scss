@@ -2,19 +2,19 @@
 @import "../../../scss/mixins.scss";
 @import "../../../scss/variables.scss";
 .container {
-    @include height-width(5%, 100%);
-    background-color: $default-background;
-    & p {
-        @include linear-gradient(rgb(184, 184, 35), red);
-        @include margin-padding(0, 0);
-        text-align: center;
-        font-size: $font-size-s;
-        letter-spacing: $letter-spacing-s;
-    }
+  @include height-width(5%, 100%);
+  background-color: $default-background;
+  & p {
+    @include linear-gradient(rgb(184, 184, 35), red);
+    @include margin-padding(0, 0);
+    text-align: center;
+    font-size: $font-size-s;
+    letter-spacing: $letter-spacing-s;
+  }
 }
 
 @media screen and (max-width: 376px) {
-    .container {
-        @include height-width(10%, 100%);
-    }
+  .container {
+    @include height-width(10%, 100%);
+  }
 }

@@ -6,7 +6,6 @@ import "../index.scss";
 
 const FavoritePage = () => {
   const [darkTheme, setDarkTheme] = useState(false);
-
   const changeThemeHandler = () => {
     setDarkTheme((prev) => !prev);
   };

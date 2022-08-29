@@ -43,6 +43,7 @@ const Top = () => {
     };
     if (!res) {
       localStorage.setItem("favorite", JSON.stringify([data]));
+      setIsFavorite(true);
       return;
     }
     const parsed = JSON.parse(res);

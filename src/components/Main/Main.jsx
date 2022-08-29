@@ -1,8 +1,8 @@
 import classes from "./Main.module.scss";
 import Top from "./Top/Top";
 import Middle from "./Middle/Middle";
-import Buttom from "./Buttom/Buttom";
 import Message from "./Message/Message";
+import Buttom from "./Buttom/Buttom";
 
 const Main = () => {
   return (

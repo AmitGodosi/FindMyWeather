@@ -2,18 +2,18 @@
 @import "../../scss/mixins.scss";
 @import "../../scss/variables.scss";
 .container {
-    min-height: calc(100vh - 40px);
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-wrap: wrap;
-    overflow: hidden;
+  min-height: calc(100vh - 40px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .title {
-    @include linear-gradient(rgb(207, 182, 149), rgb(90, 67, 36));
-    font-size: $font-size-l;
-    letter-spacing: $letter-spacing-s;
-    width: 100vw;
-    text-align: center;
+  @include linear-gradient(rgb(207, 182, 149), rgb(90, 67, 36));
+  font-size: $font-size-l;
+  letter-spacing: $letter-spacing-s;
+  width: 100vw;
+  text-align: center;
 }

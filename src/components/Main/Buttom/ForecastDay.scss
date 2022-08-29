@@ -2,77 +2,77 @@
 @import "../../../scss/colors.scss";
 @import "../../../scss/variables.scss";
 .box {
-    @include height-width(15vh, 15vw);
-    position: relative;
-    margin: $margin-m;
-    perspective: 1500px;
-    cursor: pointer;
-    &:hover &__side__front {
-        transform: rotateY(180deg);
+  @include height-width(15vh, 15vw);
+  position: relative;
+  margin: $margin-m;
+  perspective: 1500px;
+  cursor: pointer;
+  &:hover &__side__front {
+    transform: rotateY(180deg);
+  }
+  &:hover &__side__back {
+    transform: rotateY(0);
+  }
+  &__side {
+    transition: all 0.8s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    &__front {
+      height: 100%;
+      @include flexbox(center);
     }
-    &:hover &__side__back {
-        transform: rotateY(0);
+    &__back {
+      height: 100%;
+      @include flexbox(center);
+      flex-direction: column;
+      gap: 10px;
+      transform: rotateY(180deg);
+      color: white;
     }
-    &__side {
-        transition: all 0.8s;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        backface-visibility: hidden;
-        &__front {
-            height: 100%;
-            @include flexbox(center);
-        }
-        &__back {
-            height: 100%;
-            @include flexbox(center);
-            flex-direction: column;
-            gap: 10px;
-            transform: rotateY(180deg);
-            color: white;
-        }
-    }
-    &__info {
-        @include flexbox(center);
-    }
+  }
+  &__info {
+    @include flexbox(center);
+  }
 }
 
 .icon {
-    @include height-width(100%, 100%);
-    border-radius: 20%;
+  @include height-width(100%, 100%);
+  border-radius: 20%;
 }
 
 .dayName {
-    @include absolute-center(30%);
+  @include absolute-center(30%);
 }
 
 .temp {
-    @include absolute-center(50%);
+  @include absolute-center(50%);
 }
 
 @media screen and (max-width: 1024px) {
-    .box {
-        @include height-width(14vh, 14vw);
-    }
+  .box {
+    @include height-width(14vh, 14vw);
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .box {
-        @include height-width(14vh, 20vw);
-    }
+  .box {
+    @include height-width(14vh, 20vw);
+  }
 }
 
 @media screen and (max-width: 426px) {
-    .box {
-        width: 25vw;
-        margin: $margin-s;
-    }
+  .box {
+    width: 25vw;
+    margin: $margin-s;
+  }
 }
 
 @media screen and (max-width: 376px) {
-    .box {
-        height: 10vh;
-        margin: $margin-s;
-    }
+  .box {
+    height: 10vh;
+    margin: $margin-s;
+  }
 }

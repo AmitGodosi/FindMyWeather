@@ -44,7 +44,6 @@ const Search = () => {
     const value = searchRef.current.value;
     dispatch(weatherActions.setSearchTerm(value));
   };
-
   const handleAutocomplete = () => {
     let res = [];
     const value = searchRef.current.value;

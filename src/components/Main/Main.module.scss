@@ -2,13 +2,13 @@
 @import "../../scss/mixins.scss";
 @import "../../scss/variables.scss";
 .container {
-    @include flexbox(center);
-    width: 100vw;
-    height: calc(100vh - 120px);
-    z-index: 999;
+  @include flexbox(center);
+  width: 100vw;
+  height: calc(100vh - 120px);
+  z-index: 999;
 }
 
 .wrapper {
-    @include height-width(85%, 85%);
-    border: $border-l solid $on-focus;
+  @include height-width(85%, 85%);
+  border: $border-l solid $on-focus;
 }

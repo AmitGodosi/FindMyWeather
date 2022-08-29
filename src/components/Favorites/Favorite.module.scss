@@ -2,29 +2,29 @@
 @import "../../scss/mixins.scss";
 @import "../../scss/variables.scss";
 .container {
-    height: $favorite-img-size-l;
-    width: $favorite-img-size-l;
-    margin: $margin-l;
+  height: $favorite-img-size-l;
+  width: $favorite-img-size-l;
+  margin: $margin-l;
+  border-radius: $favorite-img-border-radius;
+  position: relative;
+  cursor: pointer;
+  & img {
+    @include height-width(100%, 100%);
     border-radius: $favorite-img-border-radius;
-    position: relative;
-    cursor: pointer;
-    & img {
-        @include height-width(100%, 100%);
-        border-radius: $favorite-img-border-radius;
-    }
-    .temp {
-        @include absolute-center(50%);
-        font-size: $font-size-m;
-    }
-    .name {
-        @include absolute-center(25%);
-        font-size: $font-size-m;
-    }
+  }
+  .temp {
+    @include absolute-center(50%);
+    font-size: $font-size-m;
+  }
+  .name {
+    @include absolute-center(25%);
+    font-size: $font-size-m;
+  }
 }
 
 @media screen and (max-width: 426px) {
-    .container {
-        height: $favorite-img-size-m;
-        width: $favorite-img-size-m;
-    }
+  .container {
+    height: $favorite-img-size-m;
+    width: $favorite-img-size-m;
+  }
 }

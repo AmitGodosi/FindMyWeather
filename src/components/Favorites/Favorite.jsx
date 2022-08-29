@@ -1,6 +1,6 @@
 import classes from "./Favorite.module.scss";
-import DayTime from "../../assets/day.svg";
 import NightTime from "../../assets/night.svg";
+import DayTime from "../../assets/day.svg";
 import { useState, useEffect } from "react";
 
 const Favorite = ({ isDayTime, temperature, englishName, onClick }) => {

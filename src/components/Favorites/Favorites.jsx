@@ -1,8 +1,8 @@
 import classes from "./Favorites.module.scss";
 import Favorite from "./Favorite";
 import { useDispatch } from "react-redux";
-import { weatherActions } from "../../store/index";
 import { useHistory } from "react-router";
+import { weatherActions } from "../../store/index";
 
 const Favorites = () => {
   const dispatch = useDispatch();

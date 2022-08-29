@@ -1,20 +1,20 @@
 @import "../../../scss/colors.scss";
 @import "../../../scss/mixins.scss";
 .container {
-    @include height-width(45%, 100%);
-    @include flexbox(center);
-    flex-wrap: wrap;
-    background-color: $default-background;
+  @include height-width(45%, 100%);
+  @include flexbox(center);
+  flex-wrap: wrap;
+  background-color: $default-background;
 }
 
 @media screen and (max-width: 768px) {
-    .container {
-        @include height-width(55%, 100%);
-    }
+  .container {
+    @include height-width(55%, 100%);
+  }
 }
 
 @media screen and (max-width: 376px) {
-    .container {
-        @include height-width(50%, 100%);
-    }
+  .container {
+    @include height-width(50%, 100%);
+  }
 }

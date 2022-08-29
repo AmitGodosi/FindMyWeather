@@ -2,39 +2,39 @@
 @import "../../../scss/mixins.scss";
 @import "../../../scss/variables.scss";
 .container {
-    @include height-width(20%, 100%);
-    @include flexbox(space-between);
-    background-color: $default-background;
+  @include height-width(20%, 100%);
+  @include flexbox(space-between);
+  background-color: $default-background;
 }
 
 .details {
-    @include flexbox(center);
+  @include flexbox(center);
 }
 
 .img {
-    & img {
-        @include height-width(75px, 75px);
-        margin: 0 10px;
-        border-radius: $border-radius-m;
-    }
+  & img {
+    @include height-width(75px, 75px);
+    margin: 0 10px;
+    border-radius: $border-radius-m;
+  }
 }
 
 .links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    & button {
-        background-color: rgb(219, 196, 166);
-        border: none;
-        margin: 0 $margin-m;
-        padding: $padding-m;
-        border-radius: $border-radius-m;
-        cursor: pointer;
-        &:hover {
-            background-color: $on-focus;
-        }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & button {
+    background-color: rgb(219, 196, 166);
+    border: none;
+    margin: 0 $margin-m;
+    padding: $padding-m;
+    border-radius: $border-radius-m;
+    cursor: pointer;
+    &:hover {
+      background-color: $on-focus;
     }
-    .icon {
-        cursor: pointer;
-    }
+  }
+  .icon {
+    cursor: pointer;
+  }
 }
